@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HardcordedAuthentificationService } from '../service/hardcorded-authentification.service';
 
 @Component({
   selector: 'app-menu',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  // isUserLoggedIn : boolean = false;
+  constructor(public hardcordedauth : HardcordedAuthentificationService) {
 
-  constructor() { }
+   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
+  //  this.isUserLoggedIn =this.hardcordedauth.isUserLoggedIn();  }
 
 }

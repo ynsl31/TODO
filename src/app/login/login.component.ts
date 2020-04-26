@@ -25,10 +25,12 @@ invalidlogin= false
     // if(this.username==='yns'&& this.password==='yns'){
       if(this.hardcodeAurhentificationService.authenticate(this.username,this.password)){
       //redirect
+      
       this.router.navigate(['welcome'])
       this.invalidlogin= false
     }else{
       this.invalidlogin=true
     }
        }
+   
 }
