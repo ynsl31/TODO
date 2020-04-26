@@ -1,0 +1,16 @@
+<table border="1">
+    <caption> My Todo's</caption>
+    <thead>
+        <tr>
+           
+            <th> description</th>
+            <th> Target date</th>
+            <th> is completed </th>
+        </tr>
+        <tr *ngFor="let todo of todos">
+            <td> {{todo.description}}</td>
+            <td> {{todo.date | date }}  </td>
+            <td> {{todo.done}} </td>
+        </tr>
+    </thead>
+</table>

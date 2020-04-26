@@ -14,15 +14,15 @@ invalidlogin= false
   //Router 
   //Angular.GiveMeRouter
   //DependencyInjection
-  constructor(router : Router) { }
+  constructor(private router : Router) { }
 
   ngOnInit(): void {
-  }
+  } 
   handlelogin():void {
     // console.log(this.username); 
     if(this.username==='yns'&& this.password==='yns'){
       //redirect
-
+      this.router.navigate(['welcome'])
       this.invalidlogin= false
     }else{
       this.invalidlogin=true

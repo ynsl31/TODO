@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
+import { LisTodosComponent } from './lis-todos/lis-todos.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ErrorComponent } from './error/error.component';
     AppComponent,
     WelcomeComponent,
     LoginComponent,
-    ErrorComponent
+    ErrorComponent,
+    LisTodosComponent
   ],
   imports: [
     BrowserModule,
