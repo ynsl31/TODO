@@ -22,9 +22,9 @@ export class LisTodosComponent implements OnInit {
 
   // }
   todos = [
-    new Todo(1,'Learn to Dance',false,new Date),
+    new Todo(1,'Learn to sing',false,new Date),
     new Todo(2,'Become an Expert at ANgular',false,new Date),
-    new Todo(3,'Visit Moroccoo',false,new Date)
+    new Todo(3,'building a todo app ',false,new Date)
     // {id : 1,description :'Learn to Dance'},
     // {id : 2,description :'Become an Expert at ANgular'},
     // {id : 3,description :'Visit Moroccoo'}
