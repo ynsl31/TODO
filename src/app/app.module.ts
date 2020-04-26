@@ -7,6 +7,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { LoginComponent } from './login/login.component';
 import { ErrorComponent } from './error/error.component';
 import { LisTodosComponent } from './lis-todos/lis-todos.component';
+import { MenuComponent } from './menu/menu.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { LisTodosComponent } from './lis-todos/lis-todos.component';
     WelcomeComponent,
     LoginComponent,
     ErrorComponent,
-    LisTodosComponent
+    LisTodosComponent,
+    MenuComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
