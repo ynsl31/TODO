@@ -8,13 +8,13 @@ import { HardcordedAuthentificationService } from './hardcorded-authentification
 export class ReouteGuardService implements CanActivate {
 
   constructor(private hardcode: HardcordedAuthentificationService,
-    private router :Router) {
+    private router: Router) {
 
   }
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     if (this.hardcode.isUserLoggedIn())
       return true;
-      this.router.navigate(['login']);
+    this.router.navigate(['login']);
     return false;
   }
 }
