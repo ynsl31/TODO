@@ -21,6 +21,14 @@ export class WelcomeComponent implements OnInit {
       response => this.handleSuccessfulResponse(response)
     )};
 
+    //respose from helloWorldPathVariable Spring service
+    getwelcomemsgwithparam(){
+      // this.servicehello.executeHelloWorld();
+      console.log(this.servicehello.executeHelloWorld());
+      this.servicehello.executeHelloWorldServiceWithPathVariable(this.name).subscribe(
+        response => this.handleSuccessfulResponse(response)
+      )};
+
   ngOnInit(): void {
 
     // console.log(this.route.snapshot.params['name'])
@@ -30,4 +38,5 @@ export class WelcomeComponent implements OnInit {
     // console.log(response.msg);
     this.welcomemsg = response.msg;
   }
+
 }
