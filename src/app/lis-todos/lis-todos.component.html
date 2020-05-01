@@ -1,22 +1,30 @@
 <h1> TODO</h1>
 <div class="alert alert-success" *ngIf="message"> {{message}}
 </div>
-<div class="container"> 
-<table class="table">
-    <thead>
-        <tr>
-           
-            <th> description</th>
-            <th> Target date</th>
-            <th> is completed </th>
-            <th> Actions </th>
-        </tr>
-        <tr *ngFor="let todo of todos">
-            <td> {{todo.description}}</td>
-            <td> {{todo.date | date }}  </td>
-            <td> {{todo.done}} </td>
-            <td> <button (click)="deletTodo(todo.id)" class="btn btn-warning">Delete </button> </td>
-        </tr>
-    </thead>
-</table>
+<div class="container">
+    
+        <table class="table">
+            <thead>
+                <tr>
+                    <th> description</th>
+                    <th> Target date</th>
+                    <th> is completed </th>
+                    <th> update </th>
+                    <th> delete </th>
+                </tr>
+                <tr *ngFor="let todo of todos">
+                    <td> {{todo.description}}</td>
+                    <td> {{todo.date | date }} </td>
+                    <td> {{todo.done}} </td>
+                    <td> <button (click)="updateTodo(todo.id)" class="btn btn-success">update</button> </td>
+                    <td> <button (click)="deletTodo(todo.id)" class="btn btn-warning">Delete </button>
+                    </td>
+                </tr>
+            </thead>
+            <div class="row">
+                <td> <button (click)="addTodo()"class="btn btn-success">Add</button> </td>
+            </div>
+        </table>
+        
+     
 </div>

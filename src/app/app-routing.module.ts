@@ -6,6 +6,7 @@ import { ErrorComponent } from './error/error.component';
 import { LisTodosComponent } from './lis-todos/lis-todos.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ReouteGuardService } from './service/reoute-guard.service';
+import { TodoComponent } from './todo/todo.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'welcome/:name',component : WelcomeComponent,canActivate:[ReouteGuardService]},
   {path: 'todos',component : LisTodosComponent,canActivate:[ReouteGuardService]},
   {path: 'logout',component : LogoutComponent,canActivate:[ReouteGuardService]},
+  {path: 'todos/:id',component : TodoComponent,canActivate:[ReouteGuardService]},
   {path: '**',component : ErrorComponent}
 ];
 
